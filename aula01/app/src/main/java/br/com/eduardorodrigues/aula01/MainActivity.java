@@ -17,24 +17,34 @@ import br.com.eduardorodrigues.aula01.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
 
+    TextView textView;
+    EditText txtA;
+    EditText txtB;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+
+        setContentView(R.layout.activity_main);
+        textView = findViewById(R.id.textview_hello);
+        System.out.println(textView.getText());
+
+        txtA = findViewById(R.id.txtA);
+        txtB = findViewById(R.id.txtB);
 
         setSupportActionBar(binding.toolbar);
-
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +62,13 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Subtração: " + operacoes.subtracao());
         System.out.println("Multiplicação: " + operacoes.multiplicacao());
         System.out.println("Divisão: " + operacoes.divisao());
+    }
+
+    public void onSoma(View view) {
+        int a = Integer.parseInt(txtA.getText().toString());
+        int b = Integer.parseInt(txtB.getText().toString());
+        Operacoes operacoes = new Operacoes(a, b);
+        textView.setText(String.valueOf(operacoes.soma()));
     }
 
     @Override
@@ -74,12 +91,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
     }
 }
