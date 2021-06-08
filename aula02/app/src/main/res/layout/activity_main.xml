@@ -14,4 +14,10 @@
         android:text="@string/clickme"
         android:onClick="onClick" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="Hello World!" />
+
 </LinearLayout>
