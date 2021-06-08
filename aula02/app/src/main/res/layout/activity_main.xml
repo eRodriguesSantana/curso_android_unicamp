@@ -20,4 +20,10 @@
         android:id="@+id/textView"
         android:text="Hello World!" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="@string/hint" />
+
 </LinearLayout>
