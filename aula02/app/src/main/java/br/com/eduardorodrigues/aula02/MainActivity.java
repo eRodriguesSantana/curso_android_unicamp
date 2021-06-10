@@ -19,16 +19,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    //  Atributos da activity
     private TextView textView;
     private int count;
     private EditText editText;
     private CheckBox checkBox_1;
     private CheckBox checkBox_2;
+    private RadioGroup radioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +47,12 @@ public class MainActivity extends AppCompatActivity {
         /*  A activity (tela) inicia capturando o id do elemento tipo EditText
         editText = findViewById(R.id.editText);*/
 
-        /*  A activity (tela) inicia capturando o id dos elementos tipo CheckBox*/
+        /*  A activity (tela) inicia capturando o id dos elementos tipo CheckBox
         checkBox_1 = findViewById(R.id.checkbox_1);
-        checkBox_2 = findViewById(R.id.checkbox_2);
+        checkBox_2 = findViewById(R.id.checkbox_2);*/
+
+        /*  A activity (tela) inicia capturando o id do elemento tipo RadioButton*/
+        radioGroup = findViewById(R.id.radioGroup);
     }
 
     //  Chamado quando o button é clicado
@@ -65,11 +72,11 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(this, "Você escreveu: " + txt, Toast.LENGTH_SHORT);
         toast.show();*/
 
-        /*  Recebe as instâncias das checkbox*/
+        /*  Recebe as instâncias das checkbox
         boolean checked1 = checkBox_1.isChecked();
         boolean checked2 = checkBox_2.isChecked();
 
-        /*  Verifica o que foi ou não selecionado e exibe na tela através do Toast*/
+        //  Verifica o que foi ou não selecionado das checkbox e exibe na tela através do Toast
         if(checked1 && checked2) {
             Toast.makeText(this, "Você selecionou as duas opções", Toast.LENGTH_SHORT).show();
         } else if(checked1) {
@@ -78,6 +85,17 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Você selecionou apenas a segunda opção", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "Você não selecionou nenhuma opção", Toast.LENGTH_SHORT).show();
+        }*/
+
+        //  Verifica o que foi selecionado entre os RadioButtons e exibe na tela através do Toast
+        int id = radioGroup.getCheckedRadioButtonId();
+        switch (id) {
+            case R.id.radio_1:
+                Toast.makeText(this, "Você selecionou a primeira opção", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.radio_2:
+                Toast.makeText(this, "Você selecionou a segunda opção", Toast.LENGTH_SHORT).show();
+                break;
         }
     }
 
@@ -100,5 +118,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
         }
+    }
+
+    //  Chamado quando um dos radio buttons é clicado
+    public void onRadioButtonClick(View view) {
+        String text = ((RadioButton) view).getText().toString();
+        Toast.makeText(this, "Você selecionou a " + text, Toast.LENGTH_SHORT).show();
     }
 }

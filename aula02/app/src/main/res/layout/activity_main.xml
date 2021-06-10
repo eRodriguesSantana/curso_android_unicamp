@@ -39,4 +39,23 @@
         android:id="@+id/checkbox_2"
         android:text="Segunda Opção"
         android:onClick="onCheckboxClicked" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:orientation="vertical">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_1"
+            android:text="Primeira Opção"
+            android:onClick="onRadioButtonClick" />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_2"
+            android:text="Segunda Opção"
+            android:onClick="onRadioButtonClick" />
+    </RadioGroup>
 </LinearLayout>
