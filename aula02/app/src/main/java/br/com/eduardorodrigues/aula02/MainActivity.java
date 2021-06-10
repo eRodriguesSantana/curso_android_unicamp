@@ -21,6 +21,7 @@ import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox checkBox_2;
     private RadioGroup radioGroup;
     private Spinner spinner;
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         /*  A activity (tela) inicia capturando o id do elemento tipo RadioButton
         radioGroup = findViewById(R.id.radioGroup);*/
 
-
+        /*  ---Start Spinner---
         //  A activity (tela) inicia capturando o id do elemento tipo Spinner (caixa de seleção de itens)
         spinner = findViewById(R.id.spinner);
 
@@ -68,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 String txt = ((TextView) selectedItemView).getText().toString();
-                /*  Toast abaixo exibido no ato da execução do app, antes mesmo do usuário selecionar uma opção*/
+                //  Toast abaixo exibido no ato da execução do app, antes mesmo do usuário selecionar uma opção
                 //Toast.makeText(MainActivity.this, "Você selecionou a " + txt + " de indíce " + (position+1), Toast.LENGTH_SHORT);
             }
 
@@ -78,6 +80,16 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         spinner.setOnItemSelectedListener(itemSelectedListener);
+            ---End Spinner--- */
+
+        //  A activity (tela) inicia capturando o id do elemento tipo ListView
+        listView = findViewById(R.id.listView);
+
+        AdapterView.OnItemClickListener itemClickListener = (listView, view, position, id) -> {
+            TextView textView = (TextView) view;
+            Toast.makeText(MainActivity.this, "Você selecionou a " + textView.getText().toString() + " de indíce " + (position+1), Toast.LENGTH_SHORT).show();
+        };
+        listView.setOnItemClickListener(itemClickListener);
     }
 
     //  Chamado quando o button é clicado
@@ -123,10 +135,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }*/
 
-        /*  Verifica o que foi selecionado entre as opções da caixa de seleção (spinner) e exibe na tela através do Toast*/
+        /*  Verifica o que foi selecionado entre as opções da caixa de seleção (spinner) e exibe na tela através do Toast
         String string = String.valueOf(spinner.getSelectedItem());
         int position = spinner.getSelectedItemPosition();
-        Toast.makeText(this, "Você selecionou awwwww " + string + " de indíce " + (position+1), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Você selecionou awwwww " + string + " de indíce " + (position+1), Toast.LENGTH_SHORT).show();*/
+
 
     }
 
