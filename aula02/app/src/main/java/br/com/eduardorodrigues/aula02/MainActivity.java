@@ -17,10 +17,13 @@ import br.com.eduardorodrigues.aula02.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox checkBox_1;
     private CheckBox checkBox_2;
     private RadioGroup radioGroup;
+    private Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +55,29 @@ public class MainActivity extends AppCompatActivity {
         checkBox_1 = findViewById(R.id.checkbox_1);
         checkBox_2 = findViewById(R.id.checkbox_2);*/
 
-        /*  A activity (tela) inicia capturando o id do elemento tipo RadioButton*/
-        radioGroup = findViewById(R.id.radioGroup);
+        /*  A activity (tela) inicia capturando o id do elemento tipo RadioButton
+        radioGroup = findViewById(R.id.radioGroup);*/
+
+
+        //  A activity (tela) inicia capturando o id do elemento tipo Spinner (caixa de seleção de itens)
+        spinner = findViewById(R.id.spinner);
+
+        //  OnItemSelectedListener -> interface
+        //  itemSelectedListener -> objeto criado da classe anônima OnItemSelectedListener()
+        AdapterView.OnItemSelectedListener itemSelectedListener = new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+                String txt = ((TextView) selectedItemView).getText().toString();
+                /*  Toast abaixo exibido no ato da execução do app, antes mesmo do usuário selecionar uma opção*/
+                //Toast.makeText(MainActivity.this, "Você selecionou a " + txt + " de indíce " + (position+1), Toast.LENGTH_SHORT);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+
+            }
+        };
+        spinner.setOnItemSelectedListener(itemSelectedListener);
     }
 
     //  Chamado quando o button é clicado
@@ -87,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Você não selecionou nenhuma opção", Toast.LENGTH_SHORT).show();
         }*/
 
-        //  Verifica o que foi selecionado entre os RadioButtons e exibe na tela através do Toast
+        /*  Verifica o que foi selecionado entre os RadioButtons e exibe na tela através do Toast
         int id = radioGroup.getCheckedRadioButtonId();
         switch (id) {
             case R.id.radio_1:
@@ -96,7 +121,13 @@ public class MainActivity extends AppCompatActivity {
             case R.id.radio_2:
                 Toast.makeText(this, "Você selecionou a segunda opção", Toast.LENGTH_SHORT).show();
                 break;
-        }
+        }*/
+
+        /*  Verifica o que foi selecionado entre as opções da caixa de seleção (spinner) e exibe na tela através do Toast*/
+        String string = String.valueOf(spinner.getSelectedItem());
+        int position = spinner.getSelectedItemPosition();
+        Toast.makeText(this, "Você selecionou awwwww " + string + " de indíce " + (position+1), Toast.LENGTH_SHORT).show();
+
     }
 
     //  Chamado quando um dos checkbox é clicado

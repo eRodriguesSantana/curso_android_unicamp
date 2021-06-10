@@ -7,13 +7,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@mipmap/ic_launcher"
-        android:text="@string/clickme"
-        android:onClick="onClick" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,4 +51,18 @@
             android:text="Segunda Opção"
             android:onClick="onRadioButtonClick" />
     </RadioGroup>
+
+    <!-- Spinner não herda de botão, então ela não tem atributo onclick -->
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:entries="@array/spinner_values" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_launcher"
+        android:text="@string/clickme"
+        android:onClick="onClick" />
 </LinearLayout>
