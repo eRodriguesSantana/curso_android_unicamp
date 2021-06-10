@@ -26,4 +26,17 @@
         android:id="@+id/editText"
         android:hint="@string/hint" />
 
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox_1"
+        android:text="Primeira Opção"
+        android:onClick="onCheckboxClicked" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox_2"
+        android:text="Segunda Opção"
+        android:onClick="onCheckboxClicked" />
 </LinearLayout>
