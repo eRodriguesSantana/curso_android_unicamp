@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Spinner</string>
+    <string name="clickme">Click Me</string>
+    <string-array name="spinner_values">
+        <item>Primeria Opção</item>
+        <item>Segunda Opção</item>
+        <item>Terceira Opção</item>
+        <item>Quarta Opção</item>
+    </string-array>
+</resources>
