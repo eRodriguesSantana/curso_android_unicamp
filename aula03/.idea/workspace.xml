@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0851c5f2-0933-496c-a1cf-5f2dfd1b98d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/button/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/androidTest/java/br/com/eduardorodrigues/button/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/java/br/com/eduardorodrigues/button/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/app/src/test/java/br/com/eduardorodrigues/button/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula01/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula01/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula02/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula02/.idea/gradle.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1twZ8y0BuXbNDGebX10fmzWhoZH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0851c5f2-0933-496c-a1cf-5f2dfd1b98d4" name="Default Changelist" comment="" />
+      <created>1623681966006</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623681966006</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="401" y="185" key="FileChooserDialogImpl" timestamp="1623682028979">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="401" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1623682028979" />
+  </component>
+</project>
