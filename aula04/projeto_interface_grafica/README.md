@@ -1,4 +1,4 @@
-# Este módulo introduz três gerenciadores de layout amplamente utilizados para posicionar elementos na tela do usuário.<br> Conhecendo os três gerenciadores, você será capaz de organizar a maioria das interfaces gráficas de aplicativos que você irá construir.<br>
+## Este módulo introduz três gerenciadores de layout amplamente utilizados para posicionar elementos na tela do usuário.<br> Conhecendo os três gerenciadores, você será capaz de organizar a maioria das interfaces gráficas de aplicativos que você irá construir.<br>
 
 ## Criação de um app de mensagem utilizando Relative Layout, Linear Layout e Grid Layout <br>
 
