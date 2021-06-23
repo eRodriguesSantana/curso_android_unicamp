@@ -34,4 +34,12 @@ public class Desejo {
     public void setUrgente(boolean urgente) {
         this.urgente = urgente;
     }
+
+    public String toString() {
+        String str = this.nomeDesejo + " (" + preco + ")";
+        if(this.urgente)
+            str += " -> urgente";
+
+        return str;
+    }
 }
