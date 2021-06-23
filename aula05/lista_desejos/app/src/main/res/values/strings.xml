@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">ListaDesejos</string>
+    <string name="app_name">Lista de Desejos</string>
+    <string name="total">Total = 0.00 : Urgente = 0.00</string>
+    <string name="desejo">Seu desejo</string>
+    <string name="preco">Preço R$</string>
 </resources>
